@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Data Visualization</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="../static/img/small.jpg" sizes="32x32" type="image/png">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="../static/css/aos.css">
+    <style>
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(../static/img/frontpage.png)">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-6">
+                        <!-- <img src="../static/img/logo.png" alt="logo" /> -->
+                    </div>
+                    <div class="col-6 align-self-center text-right">
+
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5"> Data Visualization<br></h1>
+        </div>
+    </div>
+    <h3>
+        <a href="/" data-aos="fade" class="btn my-4 font-weight-bold atlas-cta cta-ghost" style="background-color: aqua;">  HOME PAGE</a>
+    </h3>
+    <div class="container my-1 py-3">
+        <div class="container my-3 py-3">
+            <h3 class="text-center font-weight-bold my-4" style="color: blue;">COVID-19 Data Visualization and Forecast Analysis</h3>
+        </div>
+        <div class="row">
+            <div class="container col-md-12 col-md-6">
+                <h5>Tableau is used to do the Map Analysis, Total Analysis and Forecast Analysis<br></h5>
+
+                <div class="container col-md-12 col-md-8">
+
+                    <a href="https://public.tableau.com/profile/aaron.halbert#!/vizhome/Covid-19DataAnalysisV2/Covid-19DataAnalysis" data-aos="fade" class="btn my-4 font-weight-bold atlas-cta cta-ghost" target="_blank">  Tableau Visualization and Analysis</a>
+                    <h5 class="text-left font-weight-bold my-4">1. Map Analysis</h5>
+                    <p> Map box is used to create the Map Analysis:</p>
+                    <br>
+                    <img src=" ../static/img/tb_map.png " /><br>
+
+                    <h5 class="text-left font-weight-bold my-4">2. Total Analysis</h5>
+                    <p> World Measures:This gives the various measures from individual countries for active, confirmed, deaths, recovered cases</p>
+                    <br>
+                    <img src=" ../static/img/total_analysis.png " /><br>
+                    <h5 class="text-left font-weight-bold my-4">3. Forecast Analysis </h5>
+                    <p>* Forecasting in Tableau uses a technique known as exponential smoothing.
+                        <br> * Uncover underlying structure;Forecast algorithms try to find a regular pattern in measures that can be continued into the future.
+                        <br> * All forecast algorithms are simple models of a real-world data generating process (DGP).
+                    </p>
+                    <img src=" ../static/img/forecast_analysis.png " /><br>
+
+
+                    <!-- AOS -->
+                    <script src=" ../static/js/aos.js "></script>
+                    <script>
+                        AOS.init({}
+
+                        );
+                    </script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js "></script>
+                    <script src="{{ url_for( 'static', filename='js/app.js' ) }} "></script>
+</body>
+
+</html>
